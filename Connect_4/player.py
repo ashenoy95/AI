@@ -16,7 +16,7 @@ class Player:
   def make_move(self, move):
   	self.b.make_move(move)
 
-  def get_move(self):
+  def get_move(self): #searches for a legal move within 5s
     self.start = time.time()
     #timeout = self.start + 3
   	#move = self.AlphaBeta(self.b,-1000,1000,6)
