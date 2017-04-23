@@ -1,6 +1,3 @@
-#Aniket Shenoy
-#ashenoy@iu.edu
-
 from copy import deepcopy
 from itertools import chain
 
@@ -51,35 +48,7 @@ class Solver:
     for c in clauses:
       if len(c) == 0:
         return False
-    '''
-    pure = None
-    for i in symbols:
-      pos = False
-      neg = False
-      for c in clauses:
-        if not pos and i in c:
-          pos = True
-        if not neg and -i in c:
-          neg = True
-      if pos!=neg:
-        if pos==True:
-          pure = i
-        else:
-          pure = -i
-      if pure:
-        alpha = list(clauses)
-        for c in clauses:
-          if pure in c:
-            alpha.remove(c)
-        #if abs(pure) in symbols:
-          #symbols.remove(abs(pure))
-        clauses = alpha
-    if not clauses:
-      return True
-    for c in clauses:
-      if len(c) == 0:
-        return False
-    '''
+
     clauses_cp = list(clauses)
     #print("\nsymbols:",symbols,"\n")
     s = symbols.copy()
