@@ -1,7 +1,3 @@
-'''
-Aniket Shenoy
-ashenoy@umail.iu.edu
-'''
 
 class Board:
   def __init__(self):
