@@ -5,7 +5,7 @@ import search
 import random
 import time
 
-def test_1():
+def test_1(): #test board representation
   print("TESTING FOR 1")
   b = board.Board()
   init_str = str(b)
@@ -69,7 +69,7 @@ def test_2():
   print("passed")
   
 
-def test_3():
+def test_3(): #tests if specific known win situations work
   print("TESTING FOR 3")
   b = board.Board()
   assert(search.find_win(b, 8) == "NO FORCED WIN IN 8 MOVES")
