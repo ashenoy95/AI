@@ -1,11 +1,11 @@
 
 class Board:
-  def __init__(self):
-    self.b = [['0' for i in range(7)] for j in range(6)]
+  def __init__(self):										#constructor 
+    self.b = [['0' for i in range(7)] for j in range(6)]	#initialize empty board
     self.played_moves = []
     self.p = '2'
 
-  def generate_moves(self):
+  def generate_moves(self):									#returns available valid moves 
     available_moves = []
     for i in range(7):
       for j in range(6): 
@@ -16,7 +16,7 @@ class Board:
           continue
     return  available_moves
 
-  def make_move(self, move):
+  def make_move(self, move):								#makes move in the specified column
     for i in range(5,-1,-1):
       if(self.b[i][move]=='0'):
         if(self.p=='2'):
@@ -42,7 +42,7 @@ class Board:
       print (self.b[i])
     print ("")'''
 
-  def last_move_won(self):
+  def last_move_won(self):									#checks if the last move was the winning move
     if not self.played_moves:
       return False
     last_move = self.played_moves[-1]
@@ -50,6 +50,7 @@ class Board:
     col = last_move[1]
     #print (last_move, row, col)
     ctr = 0
+
     #check col
     for i in range(6):
       if(self.b[i][col]==self.p):
@@ -58,6 +59,7 @@ class Board:
         ctr = 0
       if(ctr==4):
        return True
+
     #check row
     ctr = 0
     for i in range(7):
@@ -67,6 +69,7 @@ class Board:
         ctr = 0
       if(ctr==4):
         return True
+
     #top left to bottom right - lower triangle   
     for i in range(3):
       c = 0
@@ -79,6 +82,7 @@ class Board:
         if(ctr==4):
           return True 
         c = c + 1
+
     #top left to bottom right - upper triangle   
     for i in range(1,4):
       r = 0
@@ -91,6 +95,7 @@ class Board:
         if(ctr==4):
           return True
         r = r + 1
+
     #bottom left to top right - upper triangle
     for i in range(5,2,-1):
       ctr = 0
@@ -103,6 +108,7 @@ class Board:
         if(ctr==4):
           return True
         c = c + 1
+
     #bottom left to top right - lower triangle
     for i in range(1,4):
       ctr = 0
