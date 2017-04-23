@@ -1,4 +1,4 @@
-Computes an optimal Markov Decision Process (MDP) policy using value iteration.
+#### Computes an optimal Markov Decision Process (MDP) policy using value iteration.####
 
 Input to the program is an MDP object that has the following functions: 
 * mdp.S(): Returns a finite set of states, which you can assume will be hashable.
