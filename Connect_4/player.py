@@ -1,23 +1,22 @@
-
 import random
 import board
 import search
 import time
 
 class Player:
-  def __init__(self): #constructor
+  def __init__(self):
     self.b = board.Board()
     self.ans = 0
     self.start = 0
     self.limit = 4.499
 
-  def name(self):     #player name
+  def name(self):
     return 'phant0m'
 
   def make_move(self, move):
   	self.b.make_move(move)
 
-  def get_move(self): #iterative deepening 
+  def get_move(self):
     self.start = time.time()
     #timeout = self.start + 3
   	#move = self.AlphaBeta(self.b,-1000,1000,6)
