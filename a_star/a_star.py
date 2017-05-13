@@ -1,5 +1,4 @@
-#Aniket Shenoy
-#ashenoy@iu.edu
+
 #Python 2.7.10
 
 import yaml 
