@@ -104,9 +104,9 @@ def test_4():
     print("DRAW")
 
 start = time.time()
-test_Q1()
-test_Q2()
-test_Q3()
+test_1()
+test_2()
+test_3()
 test_4()
 print ((time.time()-start)/60)
 
