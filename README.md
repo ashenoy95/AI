@@ -1,6 +1,6 @@
 # AI
 
-* a_star -  An implementation of the A* search algorithm
-* connect4 - A simple Connect 4 AI
-* dpll - A SAT solver for propositional logic
-* mdp - Computes an optimal Markov Decision Process policy using value iteration
+* __a_star__ -  An implementation of the A* search algorithm
+* __connect4__ - A simple Connect 4 AI
+* __dpll__ - A SAT solver for propositional logic
+* __mdp__ - Computes an optimal Markov Decision Process policy using value iteration
