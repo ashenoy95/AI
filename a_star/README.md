@@ -6,5 +6,3 @@ The heuristic function used is Euclidean distance as it is monotone.
 
 Input to the program is in the form of a yaml file that contains the nodes (cities), edges (highways), start node and goal node. (sample input is included)
 
-Requirements:
-PyYAML
