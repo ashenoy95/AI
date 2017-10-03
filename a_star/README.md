@@ -1,4 +1,4 @@
-#### A simple working implementation of the A* search algorithm
+#### A simple implementation of the A* search algorithm
 
 The program searches for the shortest path between cities (nodes) along highways (edges) in Euclidean space.
 
