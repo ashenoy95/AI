@@ -1,3 +1,5 @@
+### A*
+
 The program searches for the shortest path between cities (nodes) along highways (edges) in Euclidean space.
 
 The heuristic function used is Euclidean distance as it is monotone.
